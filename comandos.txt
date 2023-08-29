@@ -1,0 +1,47 @@
+primeiro passo criar conta no gitHub(github.com)
+depois só criar conta no git (https://git-scm.com/.)
+
+fazendo isso vocês vão instalar o git bash no padrão(next, next)
+abrir o git bash e digitar:
+
+git config --global user.name "Seu Nome"
+git config --global user.email seu@email.com
+
+
+depois criar uma chave ssh com os seguintes comandos:
+primeiro comando cria uma chave ssh vinculando ao seu email e sua conta:
+
+ssh-keygen -t ed25519 -C "seu@email.com"
+
+você vincula a sua chave a um agente do git
+eval $(ssh-agent -s)
+
+adiciona a sua chave
+ssh-add ~/.ssh/id_ed25519
+
+copia sua chave para poder adicionar no git
+cat ~/.ssh/id_ed25519.pub | clip
+
+testa sua conexão
+ssh -T git@github.com
+
+agora, vamos criar um repositorio no git
+
+comandos terminal:
+clear : faz a limpeza no terminal 
+ls : listar arquivos e pastas de onde você tiver
+cd : acessar uma pasta(tab completa o nome do arquivo)
+git init : inicia um repository vazio na pasta
+
+git remote add origin git@github.com:lirdlu/git_config_basic.git (vincular repositorio a pasta)
+
+git status : verificar o status da branch(repository)
+
+git add . : adicionar toda a modificação a lista de commit 
+
+git commit -m "conteudo/modificação" : rotula as modificações
+
+git push -u origin main : enviando os arquivos para o repositório (primeiro commit)
+
+git push : forma de enviar as modificações após ter feito o primeiro commit
+
