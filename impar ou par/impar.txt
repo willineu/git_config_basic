@@ -1,0 +1,8 @@
+while True:
+    n = int(input("um número:")) or input("um numero")
+    r = (n)%2
+    if r == 0:
+        print("p")
+    elif r != 0:
+        print("i")
+    
