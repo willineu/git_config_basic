@@ -3,3 +3,9 @@ git config --global user.email seu@email.com
 aaaaaaaa
 
 git commit -m "conteudo/modificação"
+
+git push -u origin main: 
+git init: inici um repositorio na pasta
+$ git remote add origin git@github.com:willineu/git_config_basic.git:
+(vincular repositorio a pasta)
+powww sssss
